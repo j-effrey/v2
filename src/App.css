@@ -1,38 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700,800,900&display=swap");
+
 .App {
-  text-align: center;
+	margin-top: 12.5vh;
+	margin-bottom: 12.5vh;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	font-family: "Muli", sans-serif;
+	/* background-color: aquamarine; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ------------- */
+/* COMPONENT CSS */
+/* ------------- */
+
+.header {
+	display: inline-flex;
+	width: 100%;
+	/* background-color: aqua; */
+}
+/* LOGO */
+.logo {
+	width: 125px;
+	height: 125px;
+}
+button {
+	border: none;
+	background-color: transparent;
+	font-size: 20px;
+	transition-duration: 0.5s;
+}
+.rhs {
+	height: 30px;
+	width: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* SOCIALS */
+.social {
+	height: 40px;
+	width: 40px;
+	transition-duration: 1s;
+	color: dimgray;
+}
+.social:hover {
+	transform: scale(1.1);
+}
+#linkedin:hover {
+	color: #0e76a8;
+}
+#instagram:hover {
+	color: #C13584;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* HEADLINE */
+.wave {
+	width: 70px;
+	height: 70px;
+}
+#highlight {
+	color: #33B8FF;
+}
+.cursor {
+	position: relative;
+}
+.cursor	i {
+	position: absolute;
+	width: 4px;
+	/* background-color: black; */
+	height: 75%;
+	left: 10px;
+	top: 10%;
+	animation-name: blink;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* BANNER */
+.banner {
+	width: 100%;
+	border-radius: 10px;
+	transition: 1s;
+}
+/* .banner:hover {
+	transform: scale(1.01);
+} */
+
+/* ----- */
+/* MEDIA */
+/* ----- */
+@media screen and (max-width: 959px) {
+	.logo {
+		width: 75px;
+		height: 75px;
+	}	
+	.social {
+		width: 30px;
+		height: 30px;
+	}
+	.wave {
+		width: 7vw;
+		height: 7vw;
+	}
+	.rhs {
+		width: 20px;
+		height: 20px;
+	}
 }
