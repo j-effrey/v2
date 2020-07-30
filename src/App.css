@@ -94,6 +94,10 @@ button {
 /* MEDIA */
 /* ----- */
 @media screen and (max-width: 959px) {
+	.App {
+		margin-left: 7.5vw;
+		margin-right: 7.5vw; 
+	}
 	.logo {
 		width: 75px;
 		height: 75px;
@@ -110,4 +114,15 @@ button {
 		width: 20px;
 		height: 20px;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.App {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+}
+
+.test {
+	background-color: aqua;
 }

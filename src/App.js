@@ -14,7 +14,7 @@ import Headline from "./components/Headline";
 import BannerPhoto from "./components/Banner";
 import Footer from "./components/Footer";
 import Posts from "./components/Posts";
-// import Experiences from "./components/Experiences";
+import Experiences from "./components/Experiences";
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
           <Headline />
           <BannerPhoto />
           <Posts />
-          {/* <Experiences theme={theme} /> */}
+          <Experiences theme={theme} />
 
           <Footer theme={theme} />
         </header>
